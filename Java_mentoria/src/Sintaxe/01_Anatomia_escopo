@@ -1,0 +1,45 @@
+Normalmente, o escopo é utilizado para definir o grau de ocultação da informação,
+isto é, a visibilidade e acessibilidade às variáveis em diferentes partes do programa.
+
+Escopos podem:
+
+* Conter declarações ou definições de identificadores;
+* Conter instruções e/ou expressões, que definem um algoritmo executável ou parte dele;
+* Aninhar ou ser aninhados.
+
+Pseudo_codigo:
+
+class{
+    //escopo global ou de glasse
+    globalNumber = 10
+
+    methodOne{
+        // escopo do método
+        myNumber =1
+
+        print(globalNumber) //10
+}
+
+methodTwo(){
+     //escopo de método
+    myNumber = 1
+
+    //escopo de bloco ou de fluxo
+    if(true){
+
+        yourNumber = 2
+
+        myNumber = yourNumber
+    }
+
+    print(myNumber) //2
+    print(yourNumber) //error - acesso somente dentro do fluxo
+
+  }
+
+}
+
+Uma parte fundamental na elaboração de algoritmos simples ou complexos é determinar
+a localização do código em questão.
+Sem um domínio sobre escopo de códigos, seu projeto tende a conter falhas estruturais e comprometer
+a proposta principal da aplicação.
